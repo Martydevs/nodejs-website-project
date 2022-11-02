@@ -1,8 +1,9 @@
 import express from "express";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
-
 import router from "./routes/routes.js";
+
+const PORT = 4000;
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use(router);
 
 app.use(express.static(join(__dirname, "public")));
 
-app.listen(3000, () => {
-  console.log(`Server on port ${3000}`);
+app.listen(PORT, () => {
+
+  console.log(`Server on port ${PORT}`);
 });
