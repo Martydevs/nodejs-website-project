@@ -1,11 +1,10 @@
 import express from "express";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
+import { PORT } from "./config.js";
 import router from "./routes/routes.js";
 
 const app = express();
-
-const PORT = 3000;
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
