@@ -4,10 +4,14 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": "16.18.0"
+  },
   "scripts": {
     "dev": "nodemon src/index.js",
     "start": "npm install"
   },
+  "private": true,
   "keywords": [],
   "author": "martydevs",
   "license": "ISC",
