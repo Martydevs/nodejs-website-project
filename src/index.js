@@ -1,9 +1,13 @@
+import * as dotenv from 'dotenv'
+
+dotenv.config()
+
 import express from "express";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 import router from "./routes/routes.js";
 
-const PORT = 4000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
